@@ -1,7 +1,8 @@
 {
   "name": "ChessDesonline",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "chess_desonline_completo - Versão 10.html",
   "scripts": {
-    "start": "node server.js"
+    "start": "chess_desonline_completo - Versão 10.html"
   },
+
