@@ -1,0 +1,7 @@
+# Exemplo de render.yaml (opcional) — ajuste antes de usar.
+static_sites:
+  - name: chessdesonline
+    repo: https://github.com/<SEU_USUARIO>/<SEU_REPO>
+    branch: main
+    buildCommand: ""
+    publishPath: "/"

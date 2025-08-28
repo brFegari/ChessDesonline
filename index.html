@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChessDesonline — Aulas de Aberturas & Finais (Prática)</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ChessDesonline — Aulas de Aberturas & Finais (Prática)</h1>
+    </header>
+    <div class="app">
+        <aside class="sidebar">
+            <h2>Escolha uma abertura ou final</h2>
+            <div class="openings-list" id="openingsList"></div>
+            <div class="controls">
+                <button class="nav-btn" id="btnPrev" title="Voltar">◀</button>
+                <button class="control-btn" id="btnPlay" title="Tocar/Pausar">▶</button>
+                <button class="nav-btn" id="btnNext" title="Avançar">▶</button>
+            </div>
+            <div style="margin-top:10px; display:flex; gap:8px">
+                <button id="btnReset" class="control-btn" title="Reiniciar posição">Reiniciar</button>
+                <div id="btnPractice" class="toggle" title="Ativa/desativa verificação automática" style="background: linear-gradient(90deg,#2b2b2b,#1f7ab8);">Modo Prática: <span id="practiceState">ON</span></div>
+            </div>
+            <div style="margin-top:10px" class="info">
+                <strong>Instruções:</strong>
+                <ul style="padding-left:18px; margin:6px 0 0">
+                    <li>Clique numa peça para selecioná-la e depois na casa destino.</li>
+                    <li>Se o modo "Prática" estiver ON, seus lances serão avaliados frente à abertura escolhida (não se aplica a finais — veja dica).</li>
+                    <li>Errou? o lance será sinalizado em vermelho; acerto em verde.</li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="board-wrap">
+            <div id="board" aria-label="Tabuleiro de xadrez"></div>
+            <aside class="rightpanel">
+                <div>
+                    <h2>Lista de lances</h2>
+                    <div class="movelist" id="movelist"><ol id="movesOl"></ol></div>
+                </div>
+                <div class="tips-box" id="tipsBox">
+                    <strong>Dicas da abertura:</strong>
+                    <p>Selecione uma abertura ou final para ver dicas estratégicas.</p>
+                </div>
+                <div class="status-line"><p><strong>Posição:</strong> <span id="status">Brancas a mover</span></p>
+                <p class="msg" id="feedback"></p></div>
+            </aside>
+        </main>
+    </div>
+    <footer>&copy; Arthur Tschiedel Schnorrenberger</footer>
+
+    
+    <script src="script.js" defer></script>
+</body>
+</html>
