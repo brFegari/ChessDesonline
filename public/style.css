@@ -80,7 +80,10 @@ html,body{height:100%;margin:0;padding:0;font-family: Inter, system-ui, -apple-s
 .container{max-width:var(--max-width);margin:0 auto;padding:var(--content-pad);}
 img,svg,canvas{max-width:100%;height:auto;display:block}
 @media (max-width:720px){
-:root{--content-pad:12px}
-body{font-size:15px}
-.sidebar{display:none}
+  .sidebar {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 12px;
+    order: 2; /* aparece depois do tabuleiro */
+  }
 }
